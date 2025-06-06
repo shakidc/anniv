@@ -1,9 +1,14 @@
 const messages = [
-  "Selamat Anniversary Sayang ❤️",
-  "Hari ini adalah pengingat betapa berharganya kamu untukku 💕",
-  "Aku bersyukur bisa berbagi hidup bersamamu 🎁",
+  "Kamu tahu, ada ungkapan terkenal dari M. A. W. Brouwer: 'Bumi Pasundan lahir ketika Tuhan sedang tersenyum'. Namun bagiku, Bumi Mataram jauh lebih istimewa.",
+  "Karena Bumi Mataram lahir ketika Tuhan sedang bersuka cita, sebab Ia menyertakan bidadari terbaik dan tercantiknya di sana ❤️",
+  "Saat dulu menyatakan cinta, aku berkata bahwa aku memilih menjadi Rahwana yang mencintai Sinta, bukan Rama yang mencintai Dewi Shinta.",
+  "Sekarang pun aku masih memilih menjadi Rahwana yang mencintai Sinta, karena aku tahu betapa berharganya kamu bagiku dan karena kamu adalah kamu 🌹",
+  "Aku ingin kamu tahu, bahwa aku mencintaimu lebih dari kata-kata yang bisa kuungkapkan 💖",
+  "Walaupun aku bingung harus mengungkapkannya dengan cara apa terkadang, aku sadar banyak maaf dan terima kasih dalam setahun ke belakang",
+  "Namun sekali lagi terima kasih karena kamu sudah memilih untuk ikut dan terus berjuang ❤️",
+  "Aku tahu perjalanan kita masih sangat panjang, namun aku selalu bersyukur karena menjalaninya bersamamu sayang 🌹",
   "Terima kasih sudah hadir dan bertahan 🌹",
-  "Aku mencintaimu lebih dari kata-kata 💖"
+  "Aku mencintaimu lebih dari kata-kata yang bisa kuungkapkan 💖"
 ];
 
 let index = 0;
@@ -19,7 +24,7 @@ function showMessage() {
       index++;
     }, 400);
   } else {
-    clearInterval(intervalId);
+    index = 0;
   }
 }
 
@@ -29,10 +34,9 @@ function startAnniversary() {
 
   index = 0;
   showMessage();
-  intervalId = setInterval(showMessage, 3000); // pesan muncul setiap 5 detik
+  intervalId = setInterval(showMessage, 7000);
 }
 
-// Slideshow otomatis
 let slideIndex = 0;
 const slides = document.querySelectorAll('.slide');
 

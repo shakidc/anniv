@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(#000000a0, #000000a0), url('https://images.unsplash.com/photo-1504198453319-5ce911bafcde');
+  background: linear-gradient(#000000a0, #000000a0), url('bg.jpg');
   background-size: cover;
   background-position: center;
   color: white;
@@ -56,7 +56,6 @@ h1 {
   padding: 0 10px;
 }
 
-/* Slideshow */
 .slideshow {
   margin-top: 30px;
   position: center;
@@ -78,7 +77,6 @@ h1 {
   opacity: 1;
 }
 
-/* Flower effect */
 .falling-flowers::before {
   content: '';
   position: fixed;
@@ -89,7 +87,7 @@ h1 {
   pointer-events: none;
   background-image: url('petals.png');
   background-size: 30px;
-  animation: fall 10s linear infinite;
+  animation: fall 30s linear infinite;
   opacity: 0.5;
   z-index: 0;
 }
@@ -99,7 +97,6 @@ h1 {
   100% { background-position: 0 1000px; }
 }
 
-/* Responsive */
 @media (max-width: 480px) {
   .photo {
     width: 100px;
