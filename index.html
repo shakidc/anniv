@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Anniversary</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ff69b4">
+</head>
+<body class="falling-flowers">
+  <audio id="bgMusic" src="your-music.mp3" preload="auto"></audio>
+
+  <div class="container">
+    <img src="1.jpeg" alt="Couple" class="photo">
+    <h1>Happy 1st Wedding Anniversary, Baby 💖</h1>
+    <div id="messageBox">💖</div>
+    <br>
+    <button id="nextMessage" onclick="startAnniversary()">💌 Click Here</button>
+
+    <div class="slideshow" style="margin-bottom: 10px;">
+      <img src="2.jpeg" class="slide photo active" style="border-radius: 10%;">
+      <img src="3.jpeg" class="slide photo" style="border-radius: 10%;">
+      <img src="4.jpeg" class="slide photo" style="border-radius: 10%;">
+      <img src="5.jpeg" class="slide photo" style="border-radius: 10%;">
+      <img src="6.jpeg" class="slide photo" style="border-radius: 10%;">
+      <img src="7.jpeg" class="slide photo" style="border-radius: 10%;">
+      <img src="8.jpeg" class="slide photo" style="border-radius: 10%;">
+      <img src="9.jpeg" class="slide photo" style="border-radius: 10%;">
+      <img src="10.jpeg" class="slide photo" style="border-radius: 10%;">
+      <img src="11.jpeg" class="slide photo" style="border-radius: 10%;">
+      <img src="12.jpeg" class="slide photo" style="border-radius: 10%;">
+      <img src="13.jpeg" class="slide photo" style="border-radius: 10%;">
+      <img src="14.jpeg" class="slide photo" style="border-radius: 10%;">
+      <img src="15.jpeg" class="slide photo" style="border-radius: 10%;">
+      <img src="16.jpeg" class="slide photo" style="border-radius: 10%;">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js')
+        .then(reg => console.log("✅ Service worker registered"))
+        .catch(err => console.error("❌ Service worker failed:", err));
+    }
+  </script>
+</body>
+</html>
